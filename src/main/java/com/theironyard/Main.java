@@ -34,6 +34,23 @@ public class Main {
             6 6 6 6 6 6
          */
         // todo: output the expected text
+        for(int i = 1; i <= 6; i++){
+            String out ="";
+            if(i == 3){
+                continue;
+            }
+            for(int indx  = 1; indx <= i; indx++){
+                out += i + " ";
+                //does not work
+                //out += " " + i;
+                if(i == 5){
+                    if(indx == 2){
+                        break;
+                    }
+                }
+            }
+            System.out.println(out);
+        }
 
 
     }
